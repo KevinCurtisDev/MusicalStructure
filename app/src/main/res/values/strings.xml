@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Musical Life</string>
+    <string name="albums">Albums</string>
+    <string name="artists">Artists</string>
+    <string name="favourites">Favourites</string>
+    <string name="nowPlaying">Now playing</string>
+    <string name="songs">Songs</string>
+</resources>

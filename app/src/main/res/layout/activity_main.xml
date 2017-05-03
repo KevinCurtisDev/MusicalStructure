@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalstructure.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="This is the splash screen. Once the app launches, this screen will open. It will display a selection of categories to choose from. When a category is clicked it will open a coresponding activity."
+        />
+
+    <TextView
+        android:id="@+id/favourites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/favourites"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="16dp"
+        />
+
+    <TextView
+        android:id="@+id/albums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/albums"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="16dp"
+  />
+
+    <TextView
+        android:id="@+id/artists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/artists"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="16dp"
+        />
+
+    <TextView
+        android:id="@+id/songs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/songs"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="16dp"
+         />
+
+
+
+    <TextView
+        android:id="@+id/playing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nowPlaying"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="16dp"
+         />
+
+</LinearLayout>
+
