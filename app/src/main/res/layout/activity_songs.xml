@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,10 +7,10 @@
     tools:context="com.example.android.musicalstructure.Favourites">
 
     <LinearLayout
+        style="@style/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        style="@style/navBar">
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/playing"
@@ -19,8 +18,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:tint="@color/white"
-            android:src="@drawable/playing" />
+            android:src="@drawable/playing"
+            android:tint="@color/white" />
 
         <ImageButton
             android:id="@+id/favourites"
@@ -28,8 +27,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:tint="@color/white"
-            android:src="@drawable/favourites" />
+            android:src="@drawable/favourites"
+            android:tint="@color/white" />
 
         <ImageButton
             android:id="@+id/artists"
@@ -37,8 +36,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:tint="@color/white"
-            android:src="@drawable/artists" />
+            android:src="@drawable/artists"
+            android:tint="@color/white" />
 
         <ImageButton
             android:id="@+id/albums"
@@ -46,8 +45,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:tint="@color/white"
-            android:src="@drawable/albums" />
+            android:src="@drawable/albums"
+            android:tint="@color/white" />
 
         <ImageButton
             android:id="@+id/songs"
@@ -55,8 +54,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:tint="@color/white"
-            android:src="@drawable/songlist" />
+            android:src="@drawable/songlist"
+            android:tint="@color/white" />
 
     </LinearLayout>
 
@@ -65,7 +64,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:padding="8dp"
-        android:text="This activity will contain an array of all songs downloaded to the device, accessed using the mediaPlayer class."/>
+        android:text="This activity will contain an array of all songs downloaded to the device, accessed using the mediaPlayer class." />
 
 
     <LinearLayout
@@ -77,9 +76,9 @@
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
             android:layout_weight="1"
             android:background="@color/white"
+            android:paddingTop="16dp"
             android:src="@drawable/previous" />
 
         <ImageButton
@@ -92,9 +91,9 @@
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
             android:layout_weight="1"
             android:background="@color/white"
+            android:paddingTop="16dp"
             android:src="@drawable/next" />
     </LinearLayout>
 
