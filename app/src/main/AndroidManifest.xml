@@ -16,9 +16,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NowPlaying"
-            android:label="@string/nowPlaying" />
-        <activity
             android:name=".Artists"
             android:label="@string/artists" />
         <activity

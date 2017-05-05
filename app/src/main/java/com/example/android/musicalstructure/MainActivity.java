@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,25 +15,25 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the Albums category
-        TextView albums = (TextView) findViewById(R.id.albums);
+        // Find the home button view
+        ImageButton home = (ImageButton) findViewById(R.id.playing);
 
         // Set a click listener on that View
-        albums.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers View is clicked on.
+        home.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the home button is clicked on.
             @Override
             public void onClick(View view) {
-                Intent albumIntent = new Intent(MainActivity.this, Albums.class);
-                startActivity(albumIntent);
+                Intent homeIntent = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(homeIntent);
             }
         });
 
-        // Find the View that shows the Artists category
-        TextView artists = (TextView) findViewById(R.id.artists);
+        // Find the home button view
+        ImageButton artists = (ImageButton) findViewById(R.id.artists);
 
         // Set a click listener on that View
         artists.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers View is clicked on.
+            // The code in this method will be executed when the home button is clicked on.
             @Override
             public void onClick(View view) {
                 Intent artistsIntent = new Intent(MainActivity.this, Artists.class);
@@ -41,25 +41,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the numbers category
-        TextView songs = (TextView) findViewById(R.id.songs);
+        // Find the home button view
+        ImageButton favourites = (ImageButton) findViewById(R.id.favourites);
 
         // Set a click listener on that View
-        songs.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers View is clicked on.
-            @Override
-            public void onClick(View view) {
-                Intent songsIntent = new Intent(MainActivity.this, Songs.class);
-                startActivity(songsIntent);
-            }
-        });
-
-        // Find the View that shows the numbers category
-        TextView faves = (TextView) findViewById(R.id.favourites);
-
-        // Set a click listener on that View
-        faves.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers View is clicked on.
+        favourites.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the home button is clicked on.
             @Override
             public void onClick(View view) {
                 Intent favouritesIntent = new Intent(MainActivity.this, Favourites.class);
@@ -67,16 +54,29 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the numbers category
-        TextView playing = (TextView) findViewById(R.id.playing);
+        // Find the home button view
+        ImageButton albums = (ImageButton) findViewById(R.id.albums);
 
         // Set a click listener on that View
-        playing.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers View is clicked on.
+        albums.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the home button is clicked on.
             @Override
             public void onClick(View view) {
-                Intent playIntent = new Intent(MainActivity.this, NowPlaying.class);
-                startActivity(playIntent);
+                Intent albumsIntent = new Intent(MainActivity.this, Albums.class);
+                startActivity(albumsIntent);
+            }
+        });
+
+        // Find the home button view
+        ImageButton songs = (ImageButton) findViewById(R.id.songs);
+
+        // Set a click listener on that View
+        songs.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the home button is clicked on.
+            @Override
+            public void onClick(View view) {
+                Intent songsIntent = new Intent(MainActivity.this, Songs.class);
+                startActivity(songsIntent);
             }
         });
 

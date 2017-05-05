@@ -7,6 +7,59 @@
     android:orientation="vertical"
     tools:context="com.example.android.musicalstructure.Favourites">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/navBar">
+
+        <ImageButton
+            android:id="@+id/playing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:tint="@color/white"
+            android:src="@drawable/playing" />
+
+        <ImageButton
+            android:id="@+id/favourites"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:tint="@color/white"
+            android:src="@drawable/favourites" />
+
+        <ImageButton
+            android:id="@+id/artists"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:tint="@color/white"
+            android:src="@drawable/artists" />
+
+        <ImageButton
+            android:id="@+id/albums"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:tint="@color/white"
+            android:src="@drawable/albums" />
+
+        <ImageButton
+            android:id="@+id/songs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:tint="@color/white"
+            android:src="@drawable/songlist" />
+
+    </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -16,33 +69,32 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
         android:orientation="horizontal">
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:paddingTop="16dp"
             android:layout_weight="1"
+            android:background="@color/white"
             android:src="@drawable/previous" />
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/playpause" />
+            android:background="@color/white"
+            android:src="@drawable/play" />
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:paddingTop="16dp"
             android:layout_weight="1"
+            android:background="@color/white"
             android:src="@drawable/next" />
 
-        <ImageButton
-            android:id="@+id/homeButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/home" />
     </LinearLayout>
 </LinearLayout>

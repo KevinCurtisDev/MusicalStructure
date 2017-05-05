@@ -7,74 +7,106 @@
     android:orientation="vertical"
     tools:context="com.example.android.musicalstructure.MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/navBar">
+
+        <ImageButton
+            android:id="@+id/playing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:tint="@color/white"
+            android:src="@drawable/playing" />
+
+        <ImageButton
+            android:id="@+id/favourites"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:tint="@color/white"
+            android:src="@drawable/favourites" />
+
+        <ImageButton
+            android:id="@+id/artists"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:tint="@color/white"
+            android:src="@drawable/artists" />
+
+        <ImageButton
+            android:id="@+id/albums"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:tint="@color/white"
+            android:src="@drawable/albums" />
+
+        <ImageButton
+            android:id="@+id/songs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:tint="@color/white"
+            android:src="@drawable/songlist" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:padding="8dp"
-        android:text="This is the splash screen. Once the app launches, this screen will open. It will display a selection of categories to choose from. When a category is clicked it will open a coresponding activity."
-        />
+        android:text="The main activy plays the currently selected song using the mediaPlayer class, and allows navigation from the nav bar."/>
 
-    <TextView
-        android:id="@+id/favourites"
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:src="@drawable/adel"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/favourites"
-        android:background="@color/colorPrimaryDark"
-        android:gravity="center_horizontal"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:padding="16dp"
-        />
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/albums"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/albums"
-        android:background="@color/colorPrimary"
-        android:gravity="center_horizontal"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:padding="16dp"
-  />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/previous" />
 
-    <TextView
-        android:id="@+id/artists"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/artists"
-        android:background="@color/colorPrimaryDark"
-        android:gravity="center_horizontal"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:padding="16dp"
-        />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/play" />
 
-    <TextView
-        android:id="@+id/songs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/songs"
-        android:background="@color/colorPrimary"
-        android:gravity="center_horizontal"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:padding="16dp"
-         />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/next" />
+    </LinearLayout>
 
-
-
-    <TextView
-        android:id="@+id/playing"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/nowPlaying"
-        android:background="@color/colorPrimaryDark"
-        android:gravity="center_horizontal"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:padding="16dp"
-         />
 
 </LinearLayout>
-
