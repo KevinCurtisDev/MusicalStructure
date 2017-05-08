@@ -23,6 +23,7 @@ public class Songs extends AppCompatActivity {
             public void onClick(View view) {
                 Intent homeIntent = new Intent(Songs.this, MainActivity.class);
                 startActivity(homeIntent);
+                finish();
             }
         });
 
@@ -36,6 +37,7 @@ public class Songs extends AppCompatActivity {
             public void onClick(View view) {
                 Intent artistsIntent = new Intent(Songs.this, Artists.class);
                 startActivity(artistsIntent);
+                finish();
             }
         });
 
@@ -49,6 +51,7 @@ public class Songs extends AppCompatActivity {
             public void onClick(View view) {
                 Intent favouritesIntent = new Intent(Songs.this, Favourites.class);
                 startActivity(favouritesIntent);
+                finish();
             }
         });
 
@@ -62,6 +65,7 @@ public class Songs extends AppCompatActivity {
             public void onClick(View view) {
                 Intent albumsIntent = new Intent(Songs.this, Albums.class);
                 startActivity(albumsIntent);
+                finish();
             }
         });
 
@@ -75,6 +79,7 @@ public class Songs extends AppCompatActivity {
             public void onClick(View view) {
                 Intent songsIntent = new Intent(Songs.this, Songs.class);
                 startActivity(songsIntent);
+                finish();
             }
         });
     }
